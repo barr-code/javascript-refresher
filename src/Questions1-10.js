@@ -69,23 +69,30 @@ function dropFirstThreeElements(array) {
 // Question 7
 
 function addElementToBeginningOfArray(array, element) {
-
+  array.unshift(element);
+  return array;
 };
 
 // Question 8
 
 function sortArrayByLastLetterOfEachWord(array) {
-
+  array.sort(function(x,y){
+    xLetter = x.slice(-1);
+    yLetter = y.slice(-1);
+    return xLetter < yLetter ? -1 : xLetter > yLetter ? 1 : 0;
+  })
+  return array;
 };
 
 // Question 9
 
 function returnFirstHalfOfString(string) {
-
+  x = Math.ceil(string.length/2)
+  return string.slice(0, x);
 };
 
 // Question 10
 
 function makeNumberNegative(number) {
-
+  return number < 0 ? number : -number
 };
