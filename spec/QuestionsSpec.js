@@ -15,17 +15,17 @@ describe('JavaScript Refresher Questions', function() {
     expect(removeNullsFromArray(testArray)).toEqual([true, false, 1, 2, 'x']);
   });
 
-  xit('4. removeNullsAndFalseFromArray: remove null and false elements and return array', function() {
+  it('4. removeNullsAndFalseFromArray: remove null and false elements and return array', function() {
     testArray = [null, null, true, false, 1, null, 2, false, 'x', null];
     expect(removeNullsAndFalseFromArray(testArray)).toEqual([true, 1, 2, 'x']);
   });
 
-  xit('5. reverseEveryElementInArray: return array with each individual string element reversed', function() {
+  it('5. reverseEveryElementInArray: return array with each individual string element reversed', function() {
       testArray = ['coffee', 'tea', 'cake', 'brownie'];
       expect(reverseEveryElementInArray(testArray)).toEqual(['eeffoc', 'aet', 'ekac', 'einworb']);
   });
 
-  xit('6. dropFirstThreeElements: return array with first three elements removed', function() {
+  it('6. dropFirstThreeElements: return array with first three elements removed', function() {
     testArray = [1,2,3,4,5,6]
     expect(dropFirstThreeElements(testArray)).toEqual([4,5,6]);
   });

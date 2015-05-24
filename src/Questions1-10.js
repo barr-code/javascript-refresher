@@ -37,19 +37,33 @@ function removeNullsFromArray(array) {
 // Question 4
 
 function removeNullsAndFalseFromArray(array) {
-
+  noNullsOrFalses = []
+  for(var x = 0; x < array.length; x++){
+    if((array[x] != null) && (array[x] != false)){
+      noNullsOrFalses.push(array[x]);
+    }
+  }
+  return noNullsOrFalses
 };
 
 // Question 5
 
 function reverseEveryElementInArray(array) {
-
+  reversed = []
+  for(var x = 0; x < array.length; x++){
+    reversed.push(array[x].split("").reverse().join(""));
+  }
+  return reversed;
 };
 
 // Question 6
 
 function dropFirstThreeElements(array) {
-
+  newArray = []
+  for(var x = 3; x < array.length; x++){
+    newArray.push(array[x]);
+  }
+  return newArray;
 };
 
 // Question 7
